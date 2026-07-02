@@ -1,0 +1,146 @@
+# =========================
+# Build directories
+# =========================
+
+build/
+build-*/
+cmake-build-*/
+out/
+bin/
+obj/
+
+# =========================
+# CMake generated files
+# =========================
+
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+
+# FetchContent / external deps
+_deps/
+CMakeUserPresets.json
+
+# =========================
+# Compiled binaries
+# =========================
+
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.o
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.idb
+*.ipdb
+*.iobj
+
+# =========================
+# Google Benchmark results
+# =========================
+
+results/*.json
+results/*.csv
+results/*.txt
+results/raw/
+results/tmp/
+
+# =========================
+# Profiling / performance outputs
+# =========================
+
+*.profraw
+*.profdata
+*.gcda
+*.gcno
+*.gcov
+*.perf
+perf.data
+perf.data.old
+*.speedscope.json
+*.diagsession
+*.etl
+*.vsp
+*.vspx
+
+# =========================
+# Sanitizers / crash dumps / logs
+# =========================
+
+*.log
+*.dmp
+*.core
+core
+asan.*
+ubsan.*
+tsan.*
+
+# =========================
+# Visual Studio
+# =========================
+
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+
+# Visual Studio generated
+x64/
+x86/
+Win32/
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+
+# =========================
+# VS Code / CLion / JetBrains
+# =========================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+.idea/
+*.iml
+
+# =========================
+# Ninja / Make / build tools
+# =========================
+
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+Makefile
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
