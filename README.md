@@ -1,5 +1,24 @@
 # cpp-performance
 Research over performance optimizations in C++. It will be a comprehensive cheat-sheet for C++ developers for using or not some micro-optimizations in their code with real benchmarks. The code will cover GCC, Clang, MSVC compilers and -O2 and -O3 optimizations in release with a help of Google benchmarks library.
+  
+**Workflow with presets:**
+```
+cmake --preset gcc-o2
+cmake --build --preset gcc-o2
+```
+  
+**Running benchmarks:**
+```
+mkdir -p results
+
+cd build/gcc-o2/benchmarks/lang-idiom-cpp/
+
+./build/gcc-o2/benchmarks/lang_idiom_cpp/lang_idiom_cpp \
+  --benchmark_repetitions=10 \
+  --benchmark_report_aggregates_only=true \
+  --benchmark_format=json \
+  > results/lang_idiom_cpp_gcc_o2.json
+```
 
 ## How to read table
 Here lies information regarding intepretation of the cheat-sheat tables. You should take in considiration verdict and risks and feel free to dive in to exact tests with more information dedicated to exact performance optimization.
@@ -24,7 +43,7 @@ Here lies information regarding intepretation of the cheat-sheat tables. You sho
 ## Language/Idiomatic C++
 | Optimization | Verdict | Risk | Link |
 | ------------- | ------------- | ----- | ------------------- |
-| Prefix --it or ++it | | | |
+| Prefix --it or ++it | Use by default | Low |  |
 | std::move | | | |
 | return std::move | | | |
 | noexcept move | | | |

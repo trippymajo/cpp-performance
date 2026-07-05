@@ -49,11 +49,7 @@ CMakeUserPresets.json
 # Google Benchmark results
 # =========================
 
-results/*.json
-results/*.csv
-results/*.txt
-results/raw/
-results/tmp/
+results
 
 # =========================
 # Profiling / performance outputs
@@ -128,6 +124,7 @@ MinSizeRel/
 # Ninja / Make / build tools
 # =========================
 
+.cache/
 .ninja_deps
 .ninja_log
 build.ninja
